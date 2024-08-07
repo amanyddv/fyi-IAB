@@ -1,0 +1,7 @@
+{
+  "name": "fyi-donor",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
