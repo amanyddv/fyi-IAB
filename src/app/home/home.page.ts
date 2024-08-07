@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,12 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  url: SafeResourceUrl | undefined;
+
+  constructor(private sanitizer: DomSanitizer) {}
+
+  ngOnInit() {
+    this.url = this.sanitizer.bypassSecurityTrustResourceUrl('https://fyi-donor.web.app/');
+  }
 
 }
