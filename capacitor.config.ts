@@ -2,7 +2,7 @@ import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'com.shreeva.fyidonor',
-  appName: 'fyi-donor',
+  appName: 'FYI-Donor',
   webDir: 'www',
   server: {
     androidScheme: 'https'

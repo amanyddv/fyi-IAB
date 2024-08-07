@@ -13,7 +13,7 @@ export class HomePage {
   constructor(private sanitizer: DomSanitizer) {}
 
   ngOnInit() {
-    this.url = this.sanitizer.bypassSecurityTrustResourceUrl('https://fyi-donor.web.app/');
+    this.url = this.sanitizer.bypassSecurityTrustResourceUrl('https://FYI-Donor.web.app/');
   }
 
 }
